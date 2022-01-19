@@ -3,9 +3,9 @@
 ******************************************************************************/
 
 Group members:
-- [...]
-- [...]
-- [...]
+- Victor Campanello
+- Shariq Shahbaz
+- Armin Balesic
 
 /******************************************************************************
 ** Task: Figuring out the asymptotic complexity
@@ -16,21 +16,21 @@ Group members:
 
 Insertion.java on:
 
-- random inputs:      [Quadratic] [Linearithmic] [Linear]
-- 95% sorted inputs:  [Quadratic] [Linearithmic] [Linear]
-- sorted inputs:      [Quadratic] [Linearithmic] [Linear]
+- random inputs:      [Quadratic]
+- 95% sorted inputs:  [Linearithmic]
+- sorted inputs:      [Linear]
 
 Quick.java on:
 
-- random inputs:      [Quadratic] [Linearithmic] [Linear]
-- 95% sorted inputs:  [Quadratic] [Linearithmic] [Linear]
-- sorted inputs:      [Quadratic] [Linearithmic] [Linear]
+- random inputs:      [Linearithmic]
+- 95% sorted inputs:  [Linearithmic]
+- sorted inputs:      [Quadratic]
 
 Merge.java on:
 
-- random inputs:      [Quadratic] [Linearithmic] [Linear]
-- 95% sorted inputs:  [Quadratic] [Linearithmic] [Linear]
-- sorted inputs:      Linearithmic
+- random inputs:      [Linearithmic]
+- 95% sorted inputs:  [Linearithmic]
+- sorted inputs:      [Linearithmic]
 
 /******************************************************************************
 ** Task: Improving quicksort
