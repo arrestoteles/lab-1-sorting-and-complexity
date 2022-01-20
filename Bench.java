@@ -13,7 +13,10 @@ public class Bench {
      */
     public static void main(final String[] args) {
         executionTimeReport("Quick.java: quicksort", new Quick(false, false, 0)::sort);
-        //executionTimeReport("Quick.java: quicksort with all improvements", new Quick(true, true, 42)::sort);
+        // executionTimeReport("Quick.java: quicksort with shuffle", new Quick(true, false, 0)::sort);
+        //executionTimeReport("Quick.java: quicksort with median of three", new Quick(false, true, 0)::sort);
+        //executionTimeReport("Quick.java: quicksort with insertion sort for sub arrays", new Quick(false, false, 42)::sort);
+        executionTimeReport("Quick.java: quicksort with all improvements", new Quick(true, true, 42)::sort);
         executionTimeReport("Insertion.java: insertion sort", Insertion::sort);
         executionTimeReport("Merge.java: merge sort", Merge::sort);
 
