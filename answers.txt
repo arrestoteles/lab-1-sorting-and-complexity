@@ -69,9 +69,9 @@ Insertion sort for small subarrays:
 ** A. Approximately how many hours did you spend on the assignment?
 ******************************************************************************/
 
-[..group member..]:  [..hours..]
-[..group member..]:  [..hours..]
-[..group member..]:  [..hours..]
+[Victor Campanello]:  [3]
+[Armin Balesic]:  [3]
+[Shariq Shahbaz]:  [3]
 
 
 /******************************************************************************
