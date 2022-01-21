@@ -41,13 +41,13 @@ Merge.java on:
 ******************************************************************************/
 
 Shuffling the array first:
-[no] [yes+what changes]
+Yes, the complexity became linearithmic for all three degrees of sortedness.
 
 Median-of-three pivot selection:
-[no] [yes+what changes]
+No, there is a positive effect for the sorted , however, the asymptotic complexity is unchanged.
 
 Insertion sort for small subarrays:
-[no] [yes+what changes]
+No, there is a positive effect for the sorted, however, the asymptotic complexity is unchanged.
 
 /******************************************************************************
 ** 3. What is a good cutoff to use for insertion sort?
@@ -55,13 +55,16 @@ Insertion sort for small subarrays:
 **    Remember that you should try to find the answer in a systematic way.
 ******************************************************************************/
 
-[...]
+A cutoff value of 8 works well. Using the tried and true approach of trial and error, we looped through a wide range of cut of points from 0-42.
+Then we narrowed our search further and came to the conclusion that a cutoff value of 8 works the best on our systems.
 
 /******************************************************************************
 ** 4. Which combination of improvements gives the best performance?
 ******************************************************************************/
-
-[...]
+We found that using Median of Three in combination with Insertion Sort worked best for arrays of sizes smaller than and equal to 10000 for random and 95% sorted and
+for 100% sorted it worked better for under and equal 300.
+Whereas, a combination of Median of Three and Shuffle worked the best for large sized arrays.
+Overall, Median of Three in combination with Shuffle provided the best results.
 
 /******************************************************************************
 ** Appendix: General information
@@ -69,16 +72,16 @@ Insertion sort for small subarrays:
 ** A. Approximately how many hours did you spend on the assignment?
 ******************************************************************************/
 
-[Victor Campanello]:  [3]
-[Armin Balesic]:  [3]
-[Shariq Shahbaz]:  [3]
+[Victor Campanello]:  [5.5]
+[Armin Balesic]:  [5.5]
+[Shariq Shahbaz]:  [5.5]
 
 
 /******************************************************************************
 ** B. Are there any known bugs / limitations?
 ******************************************************************************/
 
-[...]
+We were a little limited due to a gap in our knowledge of the implementations of the algorithms in code.
 
 /******************************************************************************
 ** C. Did you collaborate with any other students on this lab?
@@ -86,19 +89,17 @@ Insertion sort for small subarrays:
 **    Also include any resources (including the web) that you may
 **    may have used in creating your design.
 ******************************************************************************/
-
-[...]
+No.
 
 /******************************************************************************
 ** D. Describe any serious problems you encountered.                    
 ******************************************************************************/
-
-[...]
+Took a while to understand all the code, which made it take a while before
+we felt confident in writing code of the tasks.
 
 /******************************************************************************
 ** E. List any other comments here.
 **    Feel free to provide any feedback on how much you learned 
 **    from doing the assignment, and whether you enjoyed it.                                             
 ******************************************************************************/
-
-[...]
+Perhaps a little introduction to the code would have been useful, and some clarity in what parts we should/should not change would definitely help.
