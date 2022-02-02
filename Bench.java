@@ -13,7 +13,12 @@ public class Bench {
      */
     public static void main(final String[] args) {
         executionTimeReport("Quick.java: quicksort", new Quick(false, false, 0)::sort);
-        executionTimeReport("Quick.java: quicksort with our improvements (Median+Shuffle)", new Quick(true, true, 0)::sort);
+        executionTimeReport("Quick.java: quicksort with our improvements", new Quick(false, true, 16)::sort);
+        /*executionTimeReport("Quick.java: quicksort with insertion of 16", new Quick(false, false, 16)::sort);
+        executionTimeReport("Quick.java: quicksort with insertion of 62", new Quick(false, false, 62)::sort);
+        executionTimeReport("Quick.java: quicksort with shuffle+median", new Quick(true, true, 0)::sort);
+        executionTimeReport("Quick.java: quicksort with shuffle+insertion", new Quick(true, false, 16)::sort);
+        executionTimeReport("Quick.java: quicksort with median+insertion", new Quick(false, true, 16)::sort);*/
         executionTimeReport("Insertion.java: insertion sort", Insertion::sort);
         executionTimeReport("Merge.java: merge sort", Merge::sort);
 
@@ -68,7 +73,6 @@ public class Bench {
 
     /** Code to test the correctness of a sorting algorithm **/
 
-    @SuppressWarnings("serial")
     private static class TestException extends Exception {
     }
 

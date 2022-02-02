@@ -17,7 +17,7 @@ Group members:
 Insertion.java on:
 
 - random inputs:      [Quadratic]
-- 95% sorted inputs:  [Linearithmic]
+- 95% sorted inputs:  [Quadratic]
 - sorted inputs:      [Linear]
 
 Quick.java on:
@@ -44,10 +44,10 @@ Shuffling the array first:
 Yes, the complexity became linearithmic for all three degrees of sortedness.
 
 Median-of-three pivot selection:
-No, there is a positive effect for the sorted , however, the asymptotic complexity is unchanged.
+Yes, the complexity became linearithmic for all three degrees of sortedness.
 
 Insertion sort for small subarrays:
-No, there is a positive effect for the sorted, however, the asymptotic complexity is unchanged.
+No, there is a positive effect for the random, however, the asymptotic complexity is unchanged.
 
 /******************************************************************************
 ** 3. What is a good cutoff to use for insertion sort?
@@ -55,16 +55,13 @@ No, there is a positive effect for the sorted, however, the asymptotic complexit
 **    Remember that you should try to find the answer in a systematic way.
 ******************************************************************************/
 
-A cutoff value of 8 works well. Using the tried and true approach of trial and error, we looped through a wide range of cut of points from 0-42.
-Then we narrowed our search further and came to the conclusion that a cutoff value of 8 works the best on our systems.
+A cutoff value of 16 works well. Using the tried and true approach of trial and error, we looped through a wide range of cut of points from 0-50.
+Then we narrowed our search further and came to the conclusion that a cutoff value of 16 works the best on our systems.
 
 /******************************************************************************
 ** 4. Which combination of improvements gives the best performance?
 ******************************************************************************/
-We found that using Median of Three in combination with Insertion Sort worked best for arrays of sizes smaller than and equal to 10000 for random and 95% sorted and
-for 100% sorted it worked better for under and equal 300.
-Whereas, a combination of Median of Three and Shuffle worked the best for large sized arrays.
-Overall, Median of Three in combination with Shuffle provided the best results.
+We found that using Median of Three in combination with Insertion Sort worked best for all kinds of arrays, but especially for sorted arrays
 
 /******************************************************************************
 ** Appendix: General information
@@ -72,9 +69,9 @@ Overall, Median of Three in combination with Shuffle provided the best results.
 ** A. Approximately how many hours did you spend on the assignment?
 ******************************************************************************/
 
-[Victor Campanello]:  [5.5]
-[Armin Balesic]:  [5.5]
-[Shariq Shahbaz]:  [5.5]
+[Victor Campanello]:  [7]
+[Armin Balesic]:  [7]
+[Shariq Shahbaz]:  [7]
 
 
 /******************************************************************************
